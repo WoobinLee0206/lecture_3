@@ -16,5 +16,5 @@ import func_module_as
 # ndate = func_module_as.data_now()
 # print(ndate)
 
-re_date = func_module_as.remain_date_input(10, 20)
+re_date = func_module_as.remain_date_input()
 print(re_date)

@@ -14,14 +14,14 @@ def data_now():
 #     # print(dt.datetime.now().replace(month=12 , day=25))
 #     print(dt.datetime(2020,12,25)-dt.datetime.now())
 
-def remain_date_input(nmonth=12 ,nday=10):
+def remain_date_input(nmonth=12, nday=10):
     # print(dt.date.today())
     today = dt.date.today()
     print('오늘은 {}년 {}월 {}일입니다'.format(today.year, today.month, today.day))
     # print(dt.datetime.now().replace(month=12 , day=25))
-    nmonth = int(input('원하는 달을 입력하세요'))
-    nday = int(input('원하는 날을 입력하세요'))
-    return dt.datetime(2020,nmonth,nday)-dt.datetime.now()
+    nmonth = input('원하는 달을 입력하세요')
+    nday = input('원하는 날을 입력하세요')
+    return dt.datetime(2020, int(nmonth), int(nday)) - dt.datetime.now()
 
 # nmonth = int(input('원하는 달을 입력하세요'))
 # nday = int(input('원하는 날을 입력하세요'))
